@@ -10,6 +10,7 @@ import { ChevronRight, Code, Users, Zap, MessageSquare } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -151,19 +152,23 @@ export default function Home() {
               e criar soluções tecnológicas inovadoras.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-red-500 to-purple-600 text-white hover:from-red-600 hover:to-purple-700"
-              >
-                Nossos Serviços <ChevronRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-zinc-300 bg-transparent hover:bg-gray-100 dark:border-zinc-300 dark:text-white dark:hover:bg-zinc-800"
-              >
-                Conheça o Time
-              </Button>
+              <Link href="#services">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-red-500 to-purple-600 text-white hover:from-red-600 hover:to-purple-700"
+                >
+                  Nossos Serviços <ChevronRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+              <Link href={"#team"}>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-zinc-300 bg-transparent hover:bg-gray-100 dark:border-zinc-300 dark:text-white dark:hover:bg-zinc-800"
+                >
+                  Conheça o Time
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
