@@ -161,8 +161,8 @@ export function TeamCarousel({ members }: TeamCarouselProps) {
         <Button
           onClick={scrollPrev}
           variant="outline"
-          size="icon"
-          className="h-10 w-10 rounded-full transition-transform hover:scale-110"
+          size="sm"
+          className="md:h-10 md:w-10 h-8 w-8 rounded-full transition-transform hover:scale-110"
           aria-label="Anterior"
         >
           <ChevronLeft className="h-5 w-5" />
@@ -188,8 +188,8 @@ export function TeamCarousel({ members }: TeamCarouselProps) {
         <Button
           onClick={scrollNext}
           variant="outline"
-          size="icon"
-          className="h-10 w-10 rounded-full transition-transform hover:scale-110"
+          size="sm"
+          className="md:h-10 md:w-10 h-8 w-8 rounded-full transition-transform hover:scale-110"
           aria-label="Próximo"
         >
           <ChevronRight className="h-5 w-5" />
@@ -198,8 +198,8 @@ export function TeamCarousel({ members }: TeamCarouselProps) {
         <Button
           onClick={toggleAutoplay}
           variant="outline"
-          size="icon"
-          className="h-10 w-10 rounded-full ml-2 transition-transform hover:scale-110"
+          size="sm"
+          className="md:h-10 md:w-10 h-8 w-8 rounded-full ml-2 transition-transform hover:scale-110"
           aria-label={
             autoplayActive
               ? "Pausar apresentação automática"

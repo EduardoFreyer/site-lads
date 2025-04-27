@@ -145,7 +145,7 @@ export default function Home() {
               width={100}
               height={100}
               alt="LADS Logo"
-              className="min-w-96 mx-auto mb-6 max-h-xl"
+              className="min-w-72 mx-auto mb-6 md:min-w-96"
             />
             <p className="mx-auto mb-8 max-w-2xl text-xl dark:text-zinc-300 md:text-2xl">
               Um grupo de estudantes de programação unindo forças para aprender
